@@ -20,9 +20,7 @@ type message struct {
 
 func main() {
 	pusher := kq.NewPusher([]string{
-		"127.0.0.1:19092",
-		"127.0.0.1:19092",
-		"127.0.0.1:19092",
+		"127.0.0.1:9092",
 	}, "kq")
 
 	ticker := time.NewTicker(time.Millisecond)
