@@ -26,6 +26,7 @@ const (
 )
 
 type (
+	// ConsumeHandle defines how a message is consumed from the Kafka queue.
 	ConsumeHandle func(key, value string) error
 
 	ConsumeErrorHandler func(msg kafka.Message, err error)
